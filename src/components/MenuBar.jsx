@@ -64,15 +64,15 @@ const MenuBar = () => {
 
   return (
     <>
-      <div className="menu-bar w-full h-[100vh] flex flex-col md:flex-row relative">
+      <div  data-cursor="-inverse" className="menu-bar w-full h-[100vh] flex flex-col md:flex-row relative">
         <div className=" uppercase  menubar-links w-full md:w-1/2 h-full bg-zinc-900 text-white flex items-center justify-center flex-col px-8 pt-32 md:px-56 gap-0 lg:gap-5 lg:items-start">
           <div
             className="link-wrapper h-16 lg:h-24 overflow-hidden "
             ref={(el) => (linkWrapperRefs.current[0] = el)}
           >
-            <h1 className="top-h1 humaneregular tracking-widest text-4xl md:text-8xl">About</h1>
+            <h1 className="top-h1 humaneregular tracking-widest text-4xl md:text-8xl">Home</h1>
             <h1 className="bottom-h1 humaneregular tracking-widest text-4xl md:text-8xl text-[#5e5e5ed1]">
-              {Array.from("About").map((letter, index) => (
+              {Array.from("Home").map((letter, index) => (
                 <span key={index} style={{ display: 'inline-block' }}>{letter}</span>
               ))}
             </h1>
@@ -81,9 +81,9 @@ const MenuBar = () => {
             className="link-wrapper h-16 lg:h-24 overflow-hidden"
             ref={(el) => (linkWrapperRefs.current[1] = el)}
           >
-            <h1 className="top-h1 humaneregular tracking-widest  text-4xl md:text-8xl">Shots</h1>
+            <h1 className="top-h1 humaneregular tracking-widest  text-4xl md:text-8xl">About</h1>
             <h1 className="bottom-h1 humaneregular tracking-widest text-4xl md:text-8xl  text-[#5e5e5ed1] ">
-              {Array.from("Shots").map((letter, index) => (
+              {Array.from("About").map((letter, index) => (
                 <span key={index} style={{ display: 'inline-block' }}>{letter}</span>
               ))}
             </h1>
@@ -92,9 +92,9 @@ const MenuBar = () => {
             className="link-wrapper h-16 lg:h-24 overflow-hidden"
             ref={(el) => (linkWrapperRefs.current[2] = el)}
           >
-            <h1 className="top-h1 humaneregular tracking-widest text-4xl md:text-8xl">Skills</h1>
+            <h1 className="top-h1 humaneregular tracking-widest text-4xl md:text-8xl">Contact</h1>
             <h1 className="bottom-h1 humaneregular tracking-widest text-4xl md:text-8xl text-[#5e5e5ed1]">
-              {Array.from("Skills").map((letter, index) => (
+              {Array.from("Contact").map((letter, index) => (
                 <span key={index} style={{ display: 'inline-block' }}>{letter}</span>
               ))}
             </h1>

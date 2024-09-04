@@ -62,7 +62,7 @@ function FourthPage() {
           trigger: ".parent",
           start: "top top",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
       tl.to(frames, {
@@ -77,8 +77,15 @@ function FourthPage() {
 
   return (
     <div>
-      <div className="w-full bg-zinc-900">
-        <div className="absolute w-full h-screen z-[5] bg-black"></div>
+      <div  data-cursor="-inverse" className="w-full bg-zinc-900">
+        <div className="absolute uppercase  text-white w-full h-screen z-[5] bg-black flex flex-col text-center items-center justify-center">
+          <div data-cursor-video="/images/dance.mp4"  className="text-9xl cursor-default">
+          generate
+          </div>
+          <div className=" text-xl opacity-40">
+            Your style your fit instantly online
+          </div>
+        </div>
         <div className="parent relative top-0 left-0 w-full h-[700vh]">
           <div className="can   w-full sticky top-0 left-0 h-screen">
             <canvas className="w-full h-screen" id="frame"></canvas>

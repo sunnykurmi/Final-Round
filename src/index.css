@@ -67,6 +67,14 @@
 }
 
 
+.-lg {
+  &:before {
+    transform: scale(1.5);
+  }
+}
+
+
+
 
 
 

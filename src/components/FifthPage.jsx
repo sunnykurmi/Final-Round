@@ -62,7 +62,7 @@ export default function FifthPage() {
 
   return (
     <div>
-      <div id="page10">
+      <div  data-cursor="-inverse" id="page10">
         <div className="w-full h-screen flex gap-5 flex-col items-center justify-center">
             <div className="flex w-full items-center justify-center gap-2">
             <div className="w-[30%] text-white rounded-2xl text-6xl   h-[40vh]">

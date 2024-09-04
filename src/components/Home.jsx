@@ -48,7 +48,7 @@ export default function Home() {
       <div className="  fixed top-20 left-20 text-white z-[9]">
         IDM VTON
       </div>
-      <div  id='menubtn' className="fixed z-[99] ">
+      <div   id='menubtn' className="fixed z-[99] ">
         <MenuBtn toggleMenu={toggleMenu} />
       </div>
       <div

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="w-full z-[9999] border-t-2 bg-black border-[#ffffff53] py-10 px-10">
+    <div  data-cursor="-inverse" className="w-full z-[9999] border-t-2 bg-black border-[#ffffff53] py-10 px-10">
       {/* Branding */}
       <div className="w-full flex items-center justify-center h-32">
         <p className="text-5xl">idm-vton</p>

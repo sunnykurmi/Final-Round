@@ -35,7 +35,7 @@ export default function SecondPage() {
                     end:window.innerHeight*5,
                     pin: true,
                     pinSpacing: true,
-                    markers: true,
+                    // markers: true,
                     scrub: 3,
                 },
             });
@@ -164,7 +164,7 @@ export default function SecondPage() {
 
   return (
     <div>
-      <div id="parent2" className=" relative w-full h-screen flex flex-col items-center justify-center bg-black">
+      <div  data-cursor="-inverse" id="parent2" className=" relative w-full h-screen flex flex-col items-center justify-center bg-black">
         <div id="box1" className="absolute  w-[40%] h-[40vh] overflow-hidden rounded-3xl bg-black  ">
           <img 
           id="img1"
