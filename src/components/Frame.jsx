@@ -79,14 +79,14 @@ function FourthPage() {
     <div>
       <div  data-cursor="-inverse" className="w-full bg-zinc-900">
         <div className="absolute uppercase  text-white w-full h-screen z-[5] bg-black flex flex-col text-center items-center justify-center">
-          <div data-cursor-video="/images/dance.mp4"  className="text-9xl cursor-default">
+          <div data-cursor-video="/images/dance.mp4"  className="text-9xl cursor-default max-[600px]:text-7xl">
           generate
           </div>
           <div className=" text-xl opacity-40">
             Your style your fit instantly online
           </div>
         </div>
-        <div className="parent relative top-0 left-0 w-full h-[700vh]">
+        <div className="parent relative top-0 left-0 w-full h-[700vh] max-[600px]:hidden">
           <div className="can   w-full sticky top-0 left-0 h-screen">
             <canvas className="w-full h-screen" id="frame"></canvas>
           </div>

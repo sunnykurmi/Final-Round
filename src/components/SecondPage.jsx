@@ -173,7 +173,7 @@ export default function SecondPage() {
             alt=""
           />
         </div>
-        <div id="box2" className="absolute    w-[70%] h-[70vh]  flex ">
+        <div id="box2" className="absolute    w-[70%] h-[70vh]  flex max-[600px]:w-full max-[600px]:flex-col ">
           <div className="w-[50%] h-full  flex items-center justify-center ">
             <div id="imgparent1"  className="w-[90%] h-[90%] rounded-3xl overflow-hidden ">
               <img
@@ -196,7 +196,7 @@ export default function SecondPage() {
             
           </div>
         </div>
-        <div className="absolute w-[70%] h-[70vh]  flex ">
+        <div className="absolute w-[70%] h-[70vh]  flex max-[600px]:w-full max-[600px]:flex-col ">
           <div className="w-[50%] h-full flex items-end justify-end">
             <p id="split2" className=" z-[9] humaneregular absolute leading-[25vh] top-[50%] left-[50%] translate-x-[-50%]  translate-y-[-54%] text-[15vw] uppercase whitespace-nowrap text-[#fbfaf3]">
               Sophisticated Attention <br /> Modules

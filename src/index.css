@@ -114,6 +114,15 @@
   width: var(--btn-size);
 }
 
+
+@media (max-width: 768px) {
+  #menu-btn {
+    top: 3.5%;
+    right: 5%;
+  }
+  
+}
+
 /* bars */
 #menu-btn span {
   --bar-height: calc(var(--btn-size) * 0.05);

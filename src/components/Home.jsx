@@ -45,10 +45,10 @@ export default function Home() {
   return (
 
     <div data-cursor="-inverse" className='bg-black w-full '>
-      <div className="  fixed top-20 left-20 text-white z-[9]">
+      <div className="  fixed top-20 left-20 text-white z-[9] max-[600px]:top-10 max-[600px]:left-5">
         IDM VTON
       </div>
-      <div   id='menubtn' className="fixed z-[99] ">
+      <div   id='menubtn' className="fixed z-[99]  ">
         <MenuBtn toggleMenu={toggleMenu} />
       </div>
       <div

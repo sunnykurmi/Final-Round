@@ -74,69 +74,69 @@ export default function FirstPage() {
     createblocks();
   }, []);
 
-  useEffect(() => {
-    // Animate the count from 0 to 100
-    gsap.to(
-      {},
-      {
-        duration: 3,
-        onUpdate: function () {
-          const progress = this.progress();
-          const newCount = Math.floor(progress * 100);
-          setCount(newCount);
-        },
-      }
-    );
+  // useEffect(() => {
+  //   // Animate the count from 0 to 100
+  //   gsap.to(
+  //     {},
+  //     {
+  //       duration: 3,
+  //       onUpdate: function () {
+  //         const progress = this.progress();
+  //         const newCount = Math.floor(progress * 100);
+  //         setCount(newCount);
+  //       },
+  //     }
+  //   );
 
-    // Animate the width of the bars
-    gsap.to([leftBarRef.current, rightBarRef.current], {
-      duration: 3,
-      width: "48%",
-      ease: "linear",
-    });
+  //   // Animate the width of the bars
+  //   gsap.to([leftBarRef.current, rightBarRef.current], {
+  //     duration: 3,
+  //     width: "48%",
+  //     ease: "linear",
+  //   });
 
-    gsap.to("#load", {
-      duration: 3,
-      opacity: 0,
-      delay: 3,
-      onComplete: () => {
-        document.getElementById("load").style.display = "none";
-      },
-    });
-  }, []);
-  useEffect(() => {
-      gsap.fromTo("#la", {
-        y:100
-      },
-      {
-        y:0,
-        duration:1,
-        delay:3
-      })
-      gsap.fromTo("#la2", {
-        y:100
-      },
-      {
-        y:0,
-        duration:1,
-        delay:3.2
-      })
-      gsap.fromTo("#la3", {
-        y:100
-      },
-      {
-        y:0,
-        duration:1,
-        delay:3.4
-      })
-  }, [])
+  //   gsap.to("#load", {
+  //     duration: 3,
+  //     opacity: 0,
+  //     delay: 3,
+  //     onComplete: () => {
+  //       document.getElementById("load").style.display = "none";
+  //     },
+  //   });
+  // }, []);
+  // useEffect(() => {
+  //     gsap.fromTo("#la", {
+  //       y:100
+  //     },
+  //     {
+  //       y:0,
+  //       duration:1,
+  //       delay:3
+  //     })
+  //     gsap.fromTo("#la2", {
+  //       y:100
+  //     },
+  //     {
+  //       y:0,
+  //       duration:1,
+  //       delay:3.2
+  //     })
+  //     gsap.fromTo("#la3", {
+  //       y:100
+  //     },
+  //     {
+  //       y:0,
+  //       duration:1,
+  //       delay:3.4
+  //     })
+  // }, [])
   
   return (
     <div>
       <div data-cursor="-inverse" className="blockcontainer">
         <div id="blocks" ref={blockContainerRef}></div>
       </div>
-      <div
+      {/* <div
         id="load"
         className="fixed w-full h-screen z-[99] bg-black flex items-center justify-center"
       >
@@ -153,12 +153,12 @@ export default function FirstPage() {
             className="w-[2%] h-[2px] bg-[#ffffff31]"
           ></div>
         </div>
-      </div>
+      </div> */}
       <div
         data-cursor="-inverse"
         className="w-full pointer-events-none h-[60vh] text-white flex-col   flex items-center justify-end"
       >
-        <div className="text-7xl flex flex-col text-center uppercase overflow-hidden">
+        <div className="text-7xl flex flex-col text-center uppercase overflow-hidden max-[600px]:text-4xl ">
           <div className="w-full h-fit  overflow-hidden">
             <p id="la" >interactive fashion at</p>
           </div>
@@ -167,7 +167,7 @@ export default function FirstPage() {
           </div>
         </div>
         <div className="text-xl">
-          <p id="la3" className="opacity-40">
+          <p id="la3" className="opacity-40 text-center max-[600px]:text-xs">
             Highly realistic and authentic virtual variety of garments
           </p>
         </div>
