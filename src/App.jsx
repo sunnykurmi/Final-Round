@@ -16,7 +16,7 @@ export default function App() {
   //   requestAnimationFrame(raf)
   // }, [])
 
-  // const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>

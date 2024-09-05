@@ -36,7 +36,7 @@ export default function SecondPage() {
                     pin: true,
                     pinSpacing: true,
                     // markers: true,
-                    scrub: 3,
+                    scrub: true,
                 },
             });
             tl.to(box1, {
